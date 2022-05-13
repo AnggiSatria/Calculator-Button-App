@@ -10,7 +10,12 @@ export default function Calculator() {
   };
 
   const Result = () => {
-    setNumber(eval(number).toString());
+    try {
+      let hasil = eval(number).toString();
+      setNumber(hasil);
+    } catch (error) {
+      setNumber("Error");
+    }
   };
 
   const Clear = () => {
@@ -108,14 +113,7 @@ export default function Calculator() {
               Aritmatic(".");
             }}
           >
-            <Center
-              _text={{
-                color: "white",
-                fontSize: "55px",
-              }}
-            >
-              .
-            </Center>
+            .
           </Button>
         </Flex>
       </Box>
