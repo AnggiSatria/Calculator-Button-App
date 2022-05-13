@@ -16,7 +16,7 @@
     "native-base": "^3.4.5",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-45.0.0.tar.gz",
+    "react-native": "0.68.2",
     "react-native-web": "0.17.7",
     "webpack-dev-server": "~3.11.0"
   },
